@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { BookOpen, Languages, Library, Home } from 'lucide-react';
+import { BookOpen, Library, Home } from 'lucide-react';
 
 function Navbar() {
   const location = useLocation();
@@ -8,7 +8,6 @@ function Navbar() {
   const links = [
     { to: '/', icon: Home, label: 'Home' },
     { to: '/courses', icon: BookOpen, label: 'Courses' },
-    { to: '/translation', icon: Languages, label: 'Translation Tool' },
     { to: '/library', icon: Library, label: 'Library' }
   ];
 
